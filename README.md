@@ -1,7 +1,7 @@
 # MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization
 ## [Project Page](https://kevinlee09.github.io/research/MVHumanNet++/) | [Paper (Arxiv)](TODO) | [Dataset](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet_plusplus/)
 
-<img src="./assets/Teaser.png" width="1080"/>
+<img src="./assets/Teaser.jpg" width="1080"/>
 
 by [Chenghong Li](https://kevinlee09.github.io), Hongjie Liao, Yihao Zhi, Xihe Yang, Zhengwentai Sun, Jiahao Chang,
 Shuguang Cui and [Xiaoguang Han†](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](https://gaplab.cuhk.edu.cn/). 
@@ -100,19 +100,6 @@ In this version, around 7000 outfits are filtered. We only use the same 16 camer
 The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
 
 Copyright (c) 2025
-
-## Citation
-<!-- > [!tip]
-> The camera extrinsics from `camera_extrinsics.json` represent world-to-camera matrix in OpenCV coordinate system.
-> The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale. -->
-
-
-## License
-
-The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
-
-Copyright (c) 2025
-
 
 ## Citations
 If you find our work useful in your research, please consider citing:
