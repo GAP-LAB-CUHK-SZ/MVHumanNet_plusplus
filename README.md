@@ -1,10 +1,10 @@
 # MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization
-## [Project Page](TODO) | [Paper (Arxiv)](TODO) | [Dataset](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/)
+## [Project Page](https://kevinlee09.github.io/research/MVHumanNet++/) | [Paper (Arxiv)](TODO) | [Dataset](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet_plusplus/)
 
 <img src="./assets/Teaser.png" width="1080"/>
 
-by Chenghong Li, Hongjie Liao, Yihao Zhi, Xihe Yang, Zhengwentai Sun, Jiahao Chang,
-Shuguang Cui and [Xiaoguang Han*](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](https://gaplab.cuhk.edu.cn/). 
+by [Chenghong Li](https://kevinlee09.github.io), Hongjie Liao, Yihao Zhi, Xihe Yang, Zhengwentai Sun, Jiahao Chang,
+Shuguang Cui and [Xiaoguang Han†](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](https://gaplab.cuhk.edu.cn/). 
 
 
 
@@ -12,9 +12,9 @@ Shuguang Cui and [Xiaoguang Han*](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](ht
 
 [MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/) contains **4,500** human identities,  **9,000** daily outfits,  **60,000** motion sequences,  **645 million** with extensive annotations, including human masks, camera parameters , 2D and 3D keypoints, SMPL/SMPLX parameters, and corresponding textual descriptions. 
 
-As an extension of [MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), MVHumanNet++ is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research. Besides, enhanced segmentations and better smplx estimations are provided.
+As an extension of [MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), **MVHumanNet++** is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research. Besides, enhanced segmentations and better smplx estimations are provided.
 
-### Annotation pipeline
+## Annotation pipeline
 <img src="./assets/process_pipeline.png" width="1080"/>
 
 ## Download
@@ -25,7 +25,7 @@ Please read carefully the [Terms of Use](./Terms_of_Use.pdf) and fill this form 
 
 
 ### Folder structure 
-Please join all six parts of the main_data(cat main_data_part*.tar.gz > main_data.tar.gz) and absdepth parts(cat absdepth_part*.tar.gz > absdepth.tar.gz) before extracting.
+Please join all six parts of the main_data(`cat main_data_part*.tar.gz > main_data.tar.gz`) and absdepth parts(`cat absdepth_part*.tar.gz > absdepth.tar.gz`) before extracting.
 
 
 In this version, around 7000 outfits are filtered. We only use the same 16 camera views of the same height for each setup(10xxxx or 20xxxx). Images are sampled every 25 frames of the raw video due to storage limitation.
@@ -64,11 +64,44 @@ In this version, around 7000 outfits are filtered. We only use the same 16 camer
         ...
 
 |-- absdepth
+    |-- 100831
+        |-- depths
+            |-- cam_00
+                |-- 0025.exr
+                |-- 0050.exr
+                ...
+                |-- 1500.exr # Typically end at 1500.jpg.
+                |-- A-2045.exr # Selected A-pose image.
+            |-- cam_01
+            |-- cam_02
+            ...
+            |-- cam_15
+    ...
 |-- normal
-
+    |-- 100831
+        |-- normal
+            |-- cam_00
+                |-- 0025.jpg
+                |-- 0050.jpg
+                ...
+                |-- 1500.jpg # Typically end at 1500.jpg.
+                |-- A-2045.jpg # Selected A-pose image.
+            |-- cam_01
+            |-- cam_02
+            ...
+            |-- cam_15
+    ...
 
 ```
 
+
+## License
+
+The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
+
+Copyright (c) 2025
+
+## Citation
 <!-- > [!tip]
 > The camera extrinsics from `camera_extrinsics.json` represent world-to-camera matrix in OpenCV coordinate system.
 > The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale. -->
@@ -87,14 +120,6 @@ and
 ```
 TODO
 ```
-
-
-
-## License
-
-The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
-
-Copyright (c) 2025
 
 
 
