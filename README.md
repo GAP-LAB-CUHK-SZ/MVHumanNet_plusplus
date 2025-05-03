@@ -10,9 +10,9 @@ Shuguang Cui and [Xiaoguang Han*](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](ht
 
 ## Introduction
 
-MVHumanNet(https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/) contains **4,500** human identities,  **9,000** daily outfits,  **60,000** motion sequences,  **645 million** with extensive annotations, including human masks, camera parameters , 2D and 3D keypoints, SMPL/SMPLX parameters, and corresponding textual descriptions. 
+[MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/) contains **4,500** human identities,  **9,000** daily outfits,  **60,000** motion sequences,  **645 million** with extensive annotations, including human masks, camera parameters , 2D and 3D keypoints, SMPL/SMPLX parameters, and corresponding textual descriptions. 
 
-As an extension of MVHumanNet(https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), MVHumanNet++ is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research. Besides, enhanced segmentations and better smplx estimations are provided.
+As an extension of [MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), MVHumanNet++ is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research. Besides, enhanced segmentations and better smplx estimations are provided.
 
 ### Annotation pipeline
 <img src="./assets/process_pipeline.png" width="1080"/>
