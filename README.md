@@ -11,56 +11,67 @@ Shuguang Cui and [Xiaoguang Han*](https://gaplab.cuhk.edu.cn/) from [GAP-Lab](ht
 ## Introduction
 
 MVHumanNet(https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/) contains **4,500** human identities,  **9,000** daily outfits,  **60,000** motion sequences,  **645 million** with extensive annotations, including human masks, camera parameters , 2D and 3D keypoints, SMPL/SMPLX parameters, and corresponding textual descriptions. 
-As an extension of MVHumanNet(https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), MVHumanNet++ is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research.
 
+As an extension of MVHumanNet(https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/), MVHumanNet++ is enhanced with newly processed normal maps and depth maps, significantly expanding its applicability and utility for advanced human-centric research. Besides, enhanced segmentations and better smplx estimations are provided.
+
+### Annotation pipeline
+<img src="./assets/process_pipeline.png" width="1080"/>
+
+## Download
+The MVHumanNet Dataset is provided solely for non-commercial research and educational 
+purposes.
+
+Please read carefully the [Terms of Use](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet_plusplus/Terms_of_Use.pdf) and fill this form [form](https://docs.google.com/forms/d/e/1FAIpQLSeqvmeuJzUdmdU-JQ3ocu-o58Uo1K6xfxaeNOFn-AwYOxCgzQ/viewform) to get the download links.
 
 
 ### Folder structure 
+Please join all six parts of the main_data(cat main_data_part*.tar.gz > main_data.tar.gz) and absdepth parts(cat absdepth_part*.tar.gz > absdepth.tar.gz) before extracting.
+
+
+In this version, around 7000 outfits are filtered. We only use the same 16 camera views of the same height for each setup(10xxxx or 20xxxx). Images are sampled every 25 frames of the raw video due to storage limitation.
 ```
-|-- ROOT
-    |-- outfits_ID # 100001
-        |-- images    # Considering the limitation of storage space, we scaled the image to half the original size and masked some background.
-            |-- camera_name
-                |-- images  
-            |-- camera_name
-                |-- images
-            ....
-        |-- fmask   # corresponding masks.
-            |-- camera_name
-                |-- mask images 
-            |-- camera_name
-                |-- mask images 
-            ....
-        |-- annots # 2D image annotations by openpose.
-            |-- camera_name
-                |-- annotations  # json files
-            |-- camera_name
-                |-- annotations  # json files
-            ....
-        |-- openpose
-            |-- camera_name
-                |-- 2D keypoints  # json files
-            |-- camera_name
-                |-- 2D keypoints  # json files
-            ....
-        |-- smpl_param  #  optimizes from multi-view images
-            |-- PKL files
-        |-- smplx  #  optimizes from multi-view images
-            |-- 3D keypoints
-                |-- json files # 3D keypoints
-            |-- smpl
-                |-- json files 
-            |-- smplx_mesh  
-                |-- obj files  # smplx meshs
-        |-- camera_extrinsics.json   # extrinsics of all cameras
-        |-- camera_intrinsics.json   # intrinsics of all cameras
-        |-- camera_scale.pkl
+|-- main_data
+    |-- train 
+        |-- 100831
+            |-- images    # 1024 * 1024. 
+                |-- cam_00
+                    |-- 0025.jpg
+                    |-- 0050.jpg
+                    ...
+                    |-- 1500.jpg # Typically end at 1500.jpg.
+                    |-- A-2045.jpg # Selected A-pose image.
+                |-- cam_01
+                |-- cam_02
+                ...
+                |-- cam_15
+            |-- masks     # 1024 * 1024
+                |-- cam_00
+                |-- cam_01
+                |-- cam_02
+                ...
+                |-- cam_15
+            |-- cameras
+                |-- cam_00
+                    |-- camera.npz
+                |-- cam_01
+                |-- cam_02
+                ...
+                |-- cam_15
+            |-- openpose
+            |-- smplx_params
+            smplx_params.npz
+    |-- test # Please note that masks in test may not be all mannual filtered
+        ...
+
+|-- absdepth
+|-- normal
+
 
 ```
 
-> [!tip]
+<!-- > [!tip]
 > The camera extrinsics from `camera_extrinsics.json` represent world-to-camera matrix in OpenCV coordinate system.
-> The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale.
+> The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale. -->
 
 If you find our work useful in your research, please consider citing:
 ```
