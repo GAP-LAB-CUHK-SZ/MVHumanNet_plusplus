@@ -64,7 +64,6 @@ In this version, around 7000 outfits are filtered. We only use the same 16 camer
         ...
 
 |-- absdepth
-<<<<<<< HEAD
     |-- 100831
         |-- depths
             |-- cam_00
@@ -106,37 +105,7 @@ Copyright (c) 2025
 <!-- > [!tip]
 > The camera extrinsics from `camera_extrinsics.json` represent world-to-camera matrix in OpenCV coordinate system.
 > The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale. -->
-=======
-    |-- 100831 # only train ids
-        |-- depth
-            |-- images
-                |-- cam_00
-                    |-- 0025.exr
-                    |-- 0050.exr
-                    ...
-                    |-- 1500.exr
-                    |-- A-2045.exr
-                |-- cam_01
-                |-- cam_02
-                ...
-|-- normal
-    |-- 100831 # only train ids
-        |-- normal
-            |-- images
-                |-- cam_00
-                    |-- 0025.jpg
-                    |-- 0050.jpg
-                    ...
-                    |-- 1500.jpg
-                    |-- A-2045.jpg
-                |-- cam_01
-                |-- cam_02
-                ...
 
-
-```
-
->>>>>>> 54e4bba7473a2717425b3a49290b16169a851482
 
 ## License
 
@@ -152,7 +121,6 @@ If you find our work useful in your research, please consider citing:
   title={MVHumanNet: A Large-scale Dataset of Multi-view Daily Dressing Human Captures},
   author={Xiong, Zhangyang and Li, Chenghong and Liu, Kenkun and Liao, Hongjie and Hu, Jianqiao and Zhu, Junyi and Ning, Shuliang and Qiu, Lingteng and Wang, Chongjie and Wang, Shijie and others},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  pages={19801--19811},
   year={2024}
 }
 ```
@@ -160,9 +128,3 @@ and
 ```
 TODO
 ```
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 54e4bba7473a2717425b3a49290b16169a851482
