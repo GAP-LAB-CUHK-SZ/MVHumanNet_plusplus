@@ -64,15 +64,44 @@ In this version, around 7000 outfits are filtered. We only use the same 16 camer
         ...
 
 |-- absdepth
+    |-- 100831 # only train ids
+        |-- depth
+            |-- images
+                |-- cam_00
+                    |-- 0025.exr
+                    |-- 0050.exr
+                    ...
+                    |-- 1500.exr
+                    |-- A-2045.exr
+                |-- cam_01
+                |-- cam_02
+                ...
 |-- normal
+    |-- 100831 # only train ids
+        |-- normal
+            |-- images
+                |-- cam_00
+                    |-- 0025.jpg
+                    |-- 0050.jpg
+                    ...
+                    |-- 1500.jpg
+                    |-- A-2045.jpg
+                |-- cam_01
+                |-- cam_02
+                ...
 
 
 ```
 
-<!-- > [!tip]
-> The camera extrinsics from `camera_extrinsics.json` represent world-to-camera matrix in OpenCV coordinate system.
-> The translation should be multiplied by the camera scale from `camera_scale.pkl` to correct the scene scale. -->
 
+## License
+
+The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
+
+Copyright (c) 2025
+
+
+## Citations
 If you find our work useful in your research, please consider citing:
 ```
 @inproceedings{xiong2024mvhumannet,
@@ -87,14 +116,3 @@ and
 ```
 TODO
 ```
-
-
-
-## License
-
-The data is released under the MVHumanNet and MVHumanNet++ Terms of Use, and the code is released under the Attribution-NonCommercial 4.0 International License.
-
-Copyright (c) 2025
-
-
-
