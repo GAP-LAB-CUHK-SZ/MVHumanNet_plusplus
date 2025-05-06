@@ -1,5 +1,5 @@
 # MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization
-## [Project Page](https://kevinlee09.github.io/research/MVHumanNet++/) | [Paper (Arxiv)](TODO) | [Dataset](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet_plusplus/)
+## [Project Page](https://kevinlee09.github.io/research/MVHumanNet++/) | [Paper (Arxiv)](https://arxiv.org/abs/2505.01838) | [Dataset](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet_plusplus/)
 
 <img src="./assets/Teaser.jpg" width="1080"/>
 
@@ -113,5 +113,13 @@ If you find our work useful in your research, please consider citing:
 ```
 and 
 ```
-TODO
+@misc{li2025mvhumannetlargescaledatasetmultiview,
+      title={MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization}, 
+      author={Chenghong Li and Hongjie Liao and Yihao Zhi and Xihe Yang and Zhengwentai Sun and Jiahao Chang and Shuguang Cui and Xiaoguang Han},
+      year={2025},
+      eprint={2505.01838},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2505.01838}, 
+}
 ```
