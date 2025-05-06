@@ -91,8 +91,9 @@ In this version, around 7000 outfits are filtered. We only use the same 16 camer
             ...
             |-- cam_15
     ...
-
 ```
+
+You can visualize the estimated SMPLX parameters by running this file: [vis_smplx.py](./smplx_visualization/vis_smplx.py).
 
 
 ## License
