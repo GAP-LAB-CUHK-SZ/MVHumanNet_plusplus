@@ -3,7 +3,7 @@ import numpy as np
 import torch
 import cv2
 
-# Firstly, please install dependencies like smplx, opencv-python, pyrender, numpy, torch, trimesh .etc
+# Firstly, please install dependencies like smplx, opencv-python, pyrender, numpy, torch, trimesh, .etc
 
 
 # Download SMPLX_NEUTRAL.pkl(about 518 mb) from https://github.com/vchoutas/smplx#downloading-the-model and place it under the path './assets/smplx'
