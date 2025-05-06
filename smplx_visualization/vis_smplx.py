@@ -6,16 +6,16 @@ import cv2
 # Firstly, please install dependencies like smplx, opencv-python, pyrender, numpy, torch, trimesh, .etc
 
 
-# Download SMPLX_NEUTRAL.pkl(about 518 mb) from https://github.com/vchoutas/smplx#downloading-the-model and place it under the path './assets/smplx'
+# Download SMPLX_NEUTRAL.npz from https://github.com/vchoutas/smplx#downloading-the-model and place it under the path './assets/smplx'
 smplx_model = smplx.SMPLX(model_path = 'assets/smplx', gender = 'neutral', use_pca = True, num_pca_comps = 6, flat_hand_mean = True, batch_size = 1) # Note that different from MVHumanNet smplx saved format, MVHumanNet++ smplx follows the official MPI format.
 
 
-img_path = f"./data/100831_0250_cam_00_img.jpg"
-cam_path = f"./data/100831_cam_00_camera.npz"
-frame_id = img_path.split("_")[-4] # 0250
+img_path = f"./data/100842_0675_cam_00_img.jpg"
+cam_path = f"./data/100842_cam_00_camera.npz"
+frame_id = img_path.split("_")[-4] # 0675
 
 # ================================================================================
-smplx_file = np.load(f"./data/100831_smplx_params_all.npz") # corresponds to the smplx_params.npz file
+smplx_file = np.load(f"./data/100842_smplx_params_all.npz") # corresponds to the smplx_params.npz file
 smplx_data = {k: v for k, v in smplx_file.items()}
 smplx_id = int(frame_id) // 25 - 1
 out = smplx_model.forward(betas = torch.from_numpy(smplx_data['betas'][0][None]),
@@ -26,7 +26,7 @@ out = smplx_model.forward(betas = torch.from_numpy(smplx_data['betas'][0][None])
                           right_hand_pose = torch.from_numpy(smplx_data['right_hand_pose'][smplx_id][None]))
 
 # # # ================= or load the individual smplx parameters =====================
-# smplx_file = f"./data/100831_0250_smplx.npz" # corresponds to the 0250.npz file in 'smplx_params' folder
+# smplx_file = f"./data/100842_0675_smplx.npz" # corresponds to the 0675.npz file in 'smplx_params' folder
 # smplx_data = np.load(smplx_file, allow_pickle=True)
 # out = smplx_model.forward(betas = torch.from_numpy(smplx_data['betas']),
 #                             global_orient = torch.from_numpy(smplx_data['global_orient']),
