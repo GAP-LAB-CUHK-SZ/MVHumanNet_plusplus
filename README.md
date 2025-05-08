@@ -114,13 +114,10 @@ If you find our work useful in your research, please consider citing:
 ```
 and 
 ```
-@misc{li2025mvhumannetlargescaledatasetmultiview,
-      title={MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization}, 
-      author={Chenghong Li and Hongjie Liao and Yihao Zhi and Xihe Yang and Zhengwentai Sun and Jiahao Chang and Shuguang Cui and Xiaoguang Han},
-      year={2025},
-      eprint={2505.01838},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.01838}, 
+@article{li2025mvhumannet++,
+  title={MVHumanNet++: A Large-scale Dataset of Multi-view Daily Dressing Human Captures with Richer Annotations for 3D Human Digitization},
+  author={Li, Chenghong and Liao, Hongjie and Zhi, Yihao and Yang, Xihe and Sun, Zhengwentai and Chang, Jiahao and Cui, Shuguang and Han, Xiaoguang},
+  journal={arXiv preprint arXiv:2505.01838},
+  year={2025}
 }
 ```
