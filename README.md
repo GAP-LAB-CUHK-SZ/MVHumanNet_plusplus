@@ -21,9 +21,9 @@ As an extension of [MVHumanNet](https://github.com/GAP-LAB-CUHK-SZ/MVHumanNet/),
 The MVHumanNet Dataset is provided solely for non-commercial research and educational 
 purposes.
 
-Please read carefully the [Terms of Use](./Terms_of_Use.pdf) and fill this form [form](https://docs.google.com/forms/d/e/1FAIpQLSeqvmeuJzUdmdU-JQ3ocu-o58Uo1K6xfxaeNOFn-AwYOxCgzQ/viewform) to get the download links.
+Please read carefully the [Terms of Use](./Terms_of_Use.pdf) and fill this form [form](https://docs.google.com/forms/d/e/1FAIpQLSeqvmeuJzUdmdU-JQ3ocu-o58Uo1K6xfxaeNOFn-AwYOxCgzQ/viewform) first.
 
-You can now download the dataset directly via [ModelScope](https://www.modelscope.cn/datasets/GAP-Lab/MVHumanNet_plusplus):
+Then you can now download the dataset directly via [ModelScope](https://www.modelscope.cn/datasets/GAP-Lab/MVHumanNet_plusplus):
 
 
 
