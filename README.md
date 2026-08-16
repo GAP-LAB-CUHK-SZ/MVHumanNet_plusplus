@@ -26,6 +26,13 @@ Please read carefully the [Terms of Use](./Terms_of_Use.pdf) and fill this form 
 Then you can now download the dataset directly via [ModelScope](https://www.modelscope.cn/datasets/GAP-Lab/MVHumanNet_plusplus):
 
 
+### Download script
+
+You can use the following command to download the dataset:
+
+```bash
+python download.py --data_name MVHumanNet++ --url {DOWNLOAD_LINK_FROM_ABOVE} --download_folder {YOUR_DOWNLOAD_FOLDER}
+```
 
 ### Folder structure 
 Please join all six parts of the main_data(`cat main_data_part*.tar.gz > main_data.tar.gz`) and absdepth parts(`cat absdepth_part*.tar.gz > absdepth.tar.gz`) before extracting.
